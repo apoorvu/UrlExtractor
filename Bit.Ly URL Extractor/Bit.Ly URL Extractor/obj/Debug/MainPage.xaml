@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="Bit.Ly_URL_Extractor.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Bit.Ly_URL_Extractor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer  ZoomMode="Disabled" HorizontalScrollMode="Enabled" HorizontalScrollBarVisibility="Visible">
+
+            <Grid x:Name="Layout_Root" Margin="0,0,0,-0" Visibility="Visible">
+
+                <Grid x:Name="landscapeContent">
+                    <TextBox x:ConnectionId='1' x:Name="textBox1" HorizontalAlignment="Left" Margin="457,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500"                                   />
+                    <Button x:ConnectionId='2' x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="678,163,0,0" VerticalAlignment="Top"                      />
+                    <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="475,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="286" Width="421"/>
+
+                    <!--All other full resolution UI Elements-->
+
+                </Grid>
+
+                <Grid x:Name="snapViewContent" Visibility="Collapsed">
+
+                    <!--All snap view contents-->
+
+                </Grid>
+
+            </Grid>
+
+        </ScrollViewer>
+    </Grid>
+</Page>
+
